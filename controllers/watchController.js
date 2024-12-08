@@ -18,6 +18,7 @@ watchController.get("/get", async (req, res) => {
           { brand: { $regex: search, $options: "i" } },
           { category: { $regex: search, $options: "i" } },
           { suitable_for: { $regex: search, $options: "i" } },
+          { name: { $regex: search, $options: "i" } },
         ];
       }
   
